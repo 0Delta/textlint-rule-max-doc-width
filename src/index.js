@@ -29,9 +29,12 @@ module.exports = function (context, options = defaultOptions) {
         [Syntax.Document](node) {
             const text = getSource(node).split("\n");
             for (const key in text) {
+                console.log(key)
                 if (text.hasOwnProperty(key)) {
                     const elem = text[key];
                     const len = elem.bytes();
+                    console.log(elem)
+                    console.log(len)
                     if (len > max) {
                         report(node, new RuleError(`Line is too long(now width: ${len}).`, {
                             line: parseInt(key)

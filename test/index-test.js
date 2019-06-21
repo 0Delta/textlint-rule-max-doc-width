@@ -14,7 +14,7 @@ tester.run("rule", rule, {
         {
             text: "long",
             options: {
-                max: 2
+                max_width: 2
             },
             errors: [{
                 message: "Line is too long(now width: 4).",
@@ -28,7 +28,7 @@ long?
 longer
 longest`,
             options: {
-                max: 5
+                max_width: 5
             },
             errors: [{
                     message: "Line is too long(now width: 6).",
@@ -44,7 +44,7 @@ longest`,
         {
             text: "長い",
             options: {
-                max: 2
+                max_width: 2
             },
             errors: [{
                 message: "Line is too long(now width: 4).",
