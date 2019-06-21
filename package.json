@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build"
+  },
+  "devDependencies": {
+    "textlint-scripts": "^1.2.4"
+  },
+  "name": "textlint-rule-max-doc-width",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/0Delta/textlint-rule-max-doc-width.git"
+  },
+  "author": "0Delta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0Delta/textlint-rule-max-doc-width/issues"
+  },
+  "homepage": "https://github.com/0Delta/textlint-rule-max-doc-width#readme",
+  "description": ""
+}
