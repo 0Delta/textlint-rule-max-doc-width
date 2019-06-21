@@ -14,7 +14,7 @@
     "prepublish": "npm run --if-present build"
   },
   "devDependencies": {
-    "textlint-scripts": "^1.2.4"
+    "textlint-scripts": "^2.1.0"
   },
   "name": "textlint-rule-max-doc-width",
   "directories": {
@@ -30,5 +30,6 @@
     "url": "https://github.com/0Delta/textlint-rule-max-doc-width/issues"
   },
   "homepage": "https://github.com/0Delta/textlint-rule-max-doc-width#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {}
 }

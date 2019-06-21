@@ -12,33 +12,44 @@ tester.run("rule", rule, {
     invalid: [
         // single match
         {
-            text: "It is bugs.",
-            errors: [
-                {
-                    message: "Found bugs.",
-                    line: 1,
-                    column: 7
-                }
-            ]
+            text: "long",
+            options: {
+                max_width: 2
+            },
+            errors: [{
+                message: "Line is too long(now width: 4).",
+                line: 1
+            }]
         },
         // multiple match
         {
-            text: `It has many bugs.
-
-One more bugs`,
-            errors: [
-                {
-                    message: "Found bugs.",
-                    line: 1,
-                    column: 13
+            text: `long
+long?
+longer
+longest`,
+            options: {
+                max_width: 5
+            },
+            errors: [{
+                    message: "Line is too long(now width: 6).",
+                    line: 3
                 },
                 {
-                    message: "Found bugs.",
-                    line: 3,
-                    column: 10
+                    message: "Line is too long(now width: 7).",
+                    line: 4
                 }
             ]
         },
-
+        // ShiftJIS
+        {
+            text: "長い",
+            options: {
+                max_width: 2
+            },
+            errors: [{
+                message: "Line is too long(now width: 4).",
+                line: 1
+            }]
+        },
     ]
 });
