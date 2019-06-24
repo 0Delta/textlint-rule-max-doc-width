@@ -31,5 +31,7 @@
   },
   "homepage": "https://github.com/0Delta/textlint-rule-max-doc-width#readme",
   "description": "",
-  "dependencies": {}
+  "dependencies": {
+    "object-assign": "^4.1.1"
+  }
 }
