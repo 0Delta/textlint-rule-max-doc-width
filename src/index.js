@@ -37,7 +37,8 @@ module.exports = function (context, options = defaultOptions) {
                     // console.log(len)
                     if (len > max) {
                         report(node, new RuleError(`Line is too long(now width: ${len}).`, {
-                            line: parseInt(key)
+                            line: parseInt(key),
+                            column: max
                         }));
                     }
                 }
