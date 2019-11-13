@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "keywords": [
     "textlintrule"
   ],
@@ -14,7 +14,7 @@
     "prepublish": "npm run --if-present build"
   },
   "devDependencies": {
-    "textlint-scripts": "^2.1.0"
+    "textlint-scripts": "^3.0.0"
   },
   "name": "textlint-rule-max-doc-width",
   "directories": {
