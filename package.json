@@ -33,6 +33,7 @@
   "description": "",
   "dependencies": {
     "object-assign": "^4.1.1",
-    "minimist": ">=1.2.5"
+    "minimist": ">=1.2.5",
+    "lodash": "^4.0.0"
   }
 }
